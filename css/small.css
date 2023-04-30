@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@500&display=swap');
+
 body {
     margin: auto;
     max-width: 800px;
     border: 5px solid black;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -19,8 +21,8 @@ header img {
 }
 
 header h1 {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     font-weight: 700;
     margin: auto;
 }
@@ -31,16 +33,17 @@ main h1{
 }
 
 main ul {
-    line-height: 2em;
-    font-family: 'Courier New', Courier, monospace;
+    line-height: 4em;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 footer {
-    background-color: hsl(213, 73%, 35%);
+    background-color:  rgb(70, 116, 162);
     padding: 25px;
     text-align: center;
 }
 
 footer p {
-    font-size: 0.90em;
+    font-size: 1em;
 }

@@ -1,0 +1,56 @@
+@media only screen and (min-width: 32.5em){
+    header img {
+        margin :5px o 5px 5px;
+       
+    }    
+header{     
+    
+    text-shadow: 4px 4px 4px #aaa; 
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+body{
+    border-radius: 20px;
+    border: border: 5px solid black;
+}
+
+   header h1 {
+    padding: auto;
+    font-size: 2.5rem; 
+  
+  
+}
+
+    
+    main liv {
+        background-color: rgb(70, 116, 162);
+        text-shadow: 4px 4px 4px #aaa;
+    }
+
+    main ul {
+        font-size: 18px;
+    }   
+        footer {
+            text-shadow: 4px 4px 4px #aaa; 
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            padding: 1.5rem;
+            border-radius: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+
+        }    
+        
+}
