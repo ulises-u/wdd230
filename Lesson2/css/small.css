@@ -1,0 +1,97 @@
+.body {
+    margin: 0 auto;
+    background-color: #1f7a8c;
+    border-color: #1f7a8c;
+    padding: 10px;
+    box-shadow: 4px 4px 4px #bfdbf7;
+    border-style: outset;
+    border: 3px ridge #bfdbf7;
+    border-radius: 12px;
+}
+
+
+
+
+header {
+    background-color: #022b3a;
+    border-radius: 12px;
+}
+
+h1
+ {
+    color: white;
+    text-align: center;
+    font-family: Montserrat;
+    padding: 10px 0;
+    margin: 5px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+
+}
+
+p, h3 {
+    color: black;
+    font-family: "roboto condensed", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+a ,h2 {
+    color:  blue;
+    font-family: "roboto condensed", sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+
+
+img{
+	width: 250px;
+	height: auto;
+}
+.back-button {
+ position: relative;
+ display: inline-block;
+ margin: 15px;
+ padding: 15px 30px;
+ text-align: center;
+ font-size: 18px;
+ letter-spacing: 1px;
+ text-decoration: none;
+ color: white;
+ background: transparent;
+ cursor: pointer;
+ transition: ease-out 0.5s;
+ border-radius: 30px;
+ border: 2px solid blue;
+ border-radius: 10px;
+ box-shadow: inset  70, 116, 162;
+}
+
+.back-button:hover {
+ color: white;
+ box-shadow: inset 0 -100px 0 0 #2b04a9;
+}
+
+.back-button:active {
+ transform: scale(0.9);
+}
+
+footer {
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding: 2px;
+    line-height: 2.8em;
+    font-family: Roboto;
+    background-color: #022b3a;
+}
