@@ -13,6 +13,7 @@ html {
   h1, h2  {
 	font-family: var(--heading-font);
 	color: var(--headline-color-on-white);
+	font-family: 'Dongle', sans-serif;
   }
   header,footer{
 	padding: 1em;
@@ -28,6 +29,7 @@ html {
 	font-family: var(--paragraph-font);
 	color: var(--paragraph-color);
 	padding: 1em;
+	font-family: 'Luxurious Roman', cursive;
   }
   
   .colors {
@@ -87,19 +89,21 @@ nav ul li a {
 	background-color: var(--nav-hover-background-color);
   }
   
-  .sitemap {
-	display: grid;
-	justify-content: center;
-  
-	grid-template-columns: repeat(6, 15%);
-	grid-template-rows: 3em 1.5em 1.5em 3em;
-	grid-template-areas: ". . home home . ."
-	  ". . . top . ."
-	  ". left left right right ."
-	  "page2 page2 . . page3 page3";
-  }
-  .sitemap > div {
-  
-	text-align: center;
   
   
+  /*Typography*/
+	.typ-dongle{
+		font-family: 'Dongle', sans-serif;
+		font-size:  20px;
+	}
+	.typ-zen{
+		font-family: 'Zen Antique', serif;
+		font-size:  20px;
+	}
+	.typ-luxu{
+		font-family: 'Luxurious Roman', cursive;
+		font-size:  20px;
+	}
+	h2{
+		text-align:  center;
+	}

@@ -47,3 +47,11 @@ footer {
 footer p {
     font-size: 1em;
 }
+html {
+	background-color: #FFF8EB;
+  }
+  body {
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 1em;
