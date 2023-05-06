@@ -1,21 +1,11 @@
-@media (min-width: 37.5em) {
-	nav {
-		flex-direction: row;
-	}
-	
-	nav a {
-		font-size: 1.1rem;
-	}
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	main picture {
-		display: block;
-	}
-}
+@media only screen and (min-width: 992px) {
 
-@media (min-width: 48em) {
-	nav a {
-		font-size: 1.3rem;
-	}
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
 }
