@@ -9,8 +9,8 @@ body {
 }
 
 header {
-    background-color: rgb(70, 116, 162);
-    display: grid;
+    background-color: #bee0ec;
+    display: grid; #bee0ec;
     grid-template-columns: 400px 1fr;
 }
 
@@ -39,7 +39,7 @@ main ul {
 }
 
 footer {
-    background-color:  rgb(70, 116, 162);
+    background-color:  #bee0ec;
     padding: 25px;
     text-align: center;
 }
