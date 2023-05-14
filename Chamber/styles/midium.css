@@ -18,8 +18,7 @@
        grid-column-start: 1;
        grid-row-end: 2;
        grid-column-end: 5;
-       /*background-image: url("../images/Optimized-Optimized-Tirol-medium.jpg");
-       background-size: 100% auto;*/
+       
          
       }
       
@@ -105,28 +104,7 @@
        margin-bottom: 0px;
        padding-bottom: 5rem;
     }
-      /*Directory page - beginning*/
-      .cards {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         grid-column-gap: 2px;
-         grid-row-gap: 2px; 
-     }
- 
-     .img-dir {
-         max-width: 12.5rem;
-         align-items:center;
-         box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-     }
-      /*Directory page - ending*/
-      .grid-cards{
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       padding-bottom: 5rem;
-        }
-       .main-dir {
-          padding-bottom: 5rem;
-       }
+      
       
      
  }
