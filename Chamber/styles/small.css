@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 63.75rem) {
+
 
     nav button {
         display: none;
@@ -143,20 +143,17 @@ background-color: #bee0ec;
 
 
 /*--------------------------------------------------Main Content----------------------------------------------------------------*/
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
-    height: calc(100vh - 80px);
+main{
+    
+    
+    
     font-size: large;
 }
 p{
     text-align: center;
 }
 .event{
-    grid-area: 1 / 1 / 3 / 2; 
+   
     background-color: #ccc;
     padding: 5px;
 
@@ -166,7 +163,7 @@ p{
     margin-top: 10%;
 }
 .weather{
-    grid-area: 3 / 1 / 5 / 2;
+   
     background-color: #ccc;
 
 }
@@ -182,7 +179,7 @@ p{
 }
 
 .join{
-    grid-area: 5 / 1 / 7 / 2;
+    
     background-color: #ccc;
     padding: 5px;
 }
@@ -192,7 +189,7 @@ p{
     
 
 .hero{
-    grid-area: 1 / 2 / 5 / 4;
+    
     
 
 }
@@ -202,7 +199,7 @@ p{
 
 
 .news{
-    grid-area: 5 / 2 / 7 / 4;
+   
     background-color: #ccc;
 }
 .news p{
@@ -211,9 +208,13 @@ p{
 .news h2 {
     margin-top: 0.5rem;
 }
+.spotte{
+background-color: #F2F3AE ;
+
+}
 
 .spot1{
-    grid-area: 1 / 4 / 3 / 5;
+   
     background-color: #ccc;
     padding-bottom: 3rem;
 }
@@ -230,7 +231,7 @@ p{
     box-shadow: #000 0px 0px 10px;
 }
 .spot2{
-    grid-area: 3 / 4 / 5 / 5;
+    
     background-color: #ccc;
     padding-bottom: 3rem;
 }
@@ -245,7 +246,7 @@ p{
     box-shadow: #000 0px 0px 10px;
 }
 .spot3{
-    grid-area: 5 / 4 / 7 / 5;
+   
     background-color: #ccc;
     padding-bottom: 2rem;
 }
@@ -294,5 +295,4 @@ footer{
     font-family:'Dongle', sans-serif;
     width: 100%;
 
-}
 }
