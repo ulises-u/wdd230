@@ -167,7 +167,7 @@ p{
 }
 .weather{
     grid-area: 3 / 1 / 5 / 2;
-    background-color: rgb(172, 202, 138);
+    background-color: #ccc;
 
 }
 .weather p{
