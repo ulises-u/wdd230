@@ -1,8 +1,8 @@
-@media only screen 
-  and (min-device-width: 7.5rem) 
-  and (max-device-width: 30rem)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    
+
+    @media only screen 
+    and (min-device-width: 7.5rem) 
+    and (max-device-width: 30rem)
+    and (-webkit-min-device-pixel-ratio: 2) {
     
     p{
         margin-bottom: 8%;

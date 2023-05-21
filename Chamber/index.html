@@ -14,8 +14,12 @@
 </head>
 <body>
     <div id="banner">
-        <p></p>
-      </div>
+        <div id="banner">
+            <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+          </div>
+          
+          </div> 
+      
   <header>
 
     
@@ -29,8 +33,12 @@
     
             <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="facebook"></a>
            <a class="socialmedia" target="_blank" href="http://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="Instagram icon"></a>
-               
-             </div>
+        </div>
+           <div id="currentYear"></div> 
+           <div id="toggle-box">
+               <span id="open-btn" class="btn-block" onclick="openMenu()"></span>
+               <pan id="close-btn" class="btn-hidden" onclick="closeMenu()">&times;</pan> 
+           </div>
 
             
         <nav>
@@ -53,48 +61,81 @@
 	<main>
       
         <div class="event">
-            <h2>Cultural Meeting</h2>
-            <p>  </p>
+            <h2>The Nauvoo and British Pageants   </h2>
+            <p> The Nauvoo and British Pageants
+                
+                
+                
+                The Nauvoo Pageant fills the summer evenings of Nauvoo with authentic hymns and folk songs,
+                 lively dances and tender moments that share the joy and tell the stories of the early days of Nauvoo. 
+                 Inspired by journals, sermons and historic records of the period, the pageant is a fun and enjoyable performance with a great story to tell.
+                
+                The British Pageant steps back in time to help us remember the sacrifice of the early Christian reformers 
+                and the faith and sacrifice exhibited by early converts as they embraced the light of the restored gospel.
+                
+                The pageant performances are held Tuesday through Saturday night.
+                 Come early and enjoy the Country Fair starting at 7:00 p.m. Join in a variety of pioneer games and activities. Enjoy some toe tapping music while learning pioneer dances.
+
+
+            </p>
         </div>
         <div class="weather">
            <div class="code-cont">
-            <h2>Weather</h2>
             
+                <h2>Weather</h2>
+                <p><span id="icon-src"></span>"</p><figure><img src="images/weather.jpg" alt="id" id="weather" />  <figcaption></figcaption></figure>
+                   <p class="wind-speed" id="wind-speed"></p><br>
+                   <p id="humidity"></p><br>
+                   <p id="description"></p><br>
+                   <p id="chill"></p><br>
+                   <p id="temp"></p><br>
+                   
+               </div>
+
+
+
                
            </div>
         </div>
         <div class="join">
             <h2>Join Us!</h2>
-            <p></p>
+            <p> JUL 11, 2023 8:30 PM - AUGUST 5, 2023 10:00 PM
+                Location: Nauvoo Pageant
+                Date: July 11, 2023 8:30 pm - August 5, 2023 10:00 pm </p>
         </div>
         <div class="hero">
             <p>hero </p>
         </div>
         <div class="news">
             <h2>News Release</h2>
-            <p>    </p>
+            <p>  news  </p>
         </div>
-        <div class=" spotte ">
+        <div class="spotlight">
     
         <div class="spot1" id="spot"><spot> Spot 1</spot>
-            
+            <p>  news  </p>
         </div>
         <div class="spot2" id="spot1"><spot> Spot 2</spot>
-          
+            <p>  news  </p>
         </div>
         <div class="spot3" id="spot2"><spot> Spot 3</spot>
-            
+            <p>  news  </p>
         </div>
     </div>
 	</main>
 
 		<footer>
+            <div> 
+                <div id="logo">
+                    <a href="index.html"><img class="loguinho" src="images/logo .png" alt="logo"></a>
+                   <h1> NAUVOO IL. - CHAMBER OF COMMERCE</h1>
+               </div>
+        
             <div class="footer-content">
                     <p >&copy; <span id="year"></span> Chamber of Commerce - Nauvoo IL.</p>
                     <p>.:|:. Ulises Martir.:|:. St Louis MO</p>
                     <p>Last Updated: <span id="modify"></span></p>
                     <script src="js/scripts.js" defer></script>
-                    
                     
                      
                        </div>
@@ -102,8 +143,8 @@
 			
 		</footer>
         
-
-    
+        <script src="js/weatherapi.js"></script>
+        <script src="js/spotlight.js"></script>
     
 </body>
 </html>
