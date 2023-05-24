@@ -66,9 +66,9 @@ body{
     color: rgb(21, 33, 102);
     padding: 10px;
     text-align: center;
-    font-family: "Montserrat", serif;
-    font-size: 20px;
-    flex-direction: column;
+    padding: 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 time,
     aside {
