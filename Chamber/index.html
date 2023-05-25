@@ -13,19 +13,17 @@
     
 </head>
 <body>
-    <div id="banner">
-        <div id="banner">
-            <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-          </div>
-          
-          </div> 
+    <header>
+    <div id="chamber">
+       
+        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.  </p>
+      </div>
       
-  <header>
-
+    
     
     <div id="now"></div>
      <div id="logo">
-             <a href="index.html"><img class="loguinho" src="images/logo .png" alt="logo"></a>
+             <a href="index.html"><img class="logo" src="images/logo .png" alt="logo"></a>
             <h1> NAUVOO IL. - CHAMBER OF COMMERCE</h1>
         </div>
         
@@ -36,9 +34,9 @@
         </div>
            <div id="currentYear"></div> 
            <div id="toggle-box">
-               <span id="open-btn" class="btn-block" onclick="openMenu()"></span>
-               <pan id="close-btn" class="btn-hidden" onclick="closeMenu()">&times;</pan> 
-           </div>
+            <span id="open-btn" class="btn-block" onclick="openMenu()"></span>
+            <span id="close-btn" class="btn-hidden" onclick="closeMenu()">&times;</span> 
+        </div>
 
             
         <nav>
@@ -61,20 +59,12 @@
 	<main>
       
         <div class="event">
-            <h2>The Nauvoo and British Pageants   </h2>
-            <p> The Nauvoo and British Pageants
-                
-                
-                
+            <h2>The Nauvoo and British Pageants  </h2>
+            <p> 
                 The Nauvoo Pageant fills the summer evenings of Nauvoo with authentic hymns and folk songs,
                  lively dances and tender moments that share the joy and tell the stories of the early days of Nauvoo. 
-                 Inspired by journals, sermons and historic records of the period, the pageant is a fun and enjoyable performance with a great story to tell.
-                
-                The British Pageant steps back in time to help us remember the sacrifice of the early Christian reformers 
-                and the faith and sacrifice exhibited by early converts as they embraced the light of the restored gospel.
-                
-                The pageant performances are held Tuesday through Saturday night.
-                 Come early and enjoy the Country Fair starting at 7:00 p.m. Join in a variety of pioneer games and activities. Enjoy some toe tapping music while learning pioneer dances.
+                 Inspired by journals, 
+                 Come early and enjoy the Country Fair starting at 7:00 p.m. Join in a variety of pioneer games and activities. 
 
 
             </p>
@@ -83,7 +73,7 @@
            <div class="code-cont">
             
                 <h2>Weather</h2>
-                <p><span id="icon-src"></span>"</p><figure><img src="images/weather.jpg" alt="id" id="weather" />  <figcaption></figcaption></figure>
+                <p><span id="icon-src"></span>"</p><figure><img src="images/nuve.jpg" alt="id" id="weather-icon" />  <figcaption></figcaption></figure>
                    <p class="wind-speed" id="wind-speed"></p><br>
                    <p id="humidity"></p><br>
                    <p id="description"></p><br>
@@ -110,7 +100,7 @@
             <h2>News Release</h2>
             <p>  news  </p>
         </div>
-        <div class="spotlight">
+        <aside class="aside">
     
         <div class="spot1" id="spot"><spot> Spot 1</spot>
             <p>  news  </p>
@@ -121,16 +111,29 @@
         <div class="spot3" id="spot2"><spot> Spot 3</spot>
             <p>  news  </p>
         </div>
-    </div>
+        </aside>
+    
 	</main>
 
 		<footer>
-            <div> 
-                <div id="logo">
-                    <a href="index.html"><img class="loguinho" src="images/logo .png" alt="logo"></a>
-                   <h1> NAUVOO IL. - CHAMBER OF COMMERCE</h1>
-               </div>
         
+                <div id=" footer-logo">
+                    <a href="index.html"><img class="footer-logo" src="images/logo .png" alt="logo"></a>
+                   
+               </div>
+               <div class="nauvoo-footer">
+                <h2>Navuvoo IL </h2> <br> Chamber of Commerce 
+                <p> 975 Young St.<br> Nauvoo, IL 62354</p>
+            </div>
+            <div class="contact">
+                <p>Nauvooinformation@gmail.com</p>
+                <p> Call (618)-Navuvoo</p>
+                <p><a href=" https://www.bing.com/search?q=975+young+st%2c+nauvoo%2c+il+62354.+maps+google&qs=NWU&pq=975+young+st%2c+nauvoo%2c+il+62354.+map&sk=NW_XFC1NWU1&sc=6-35&cvid=DCC9C5C685A948A7A18A57BA9D0DC354&FORM=QBRE&sp=3&ghc=1&lq=0   " target="_blank">📍 Location</a></p>
+            </div>
+           
+
+
+
             <div class="footer-content">
                     <p >&copy; <span id="year"></span> Chamber of Commerce - Nauvoo IL.</p>
                     <p>.:|:. Ulises Martir.:|:. St Louis MO</p>
@@ -138,13 +141,14 @@
                     <script src="js/scripts.js" defer></script>
                     
                      
-                       </div>
+                       
             </div>
 			
 		</footer>
         
         <script src="js/weatherapi.js"></script>
         <script src="js/spotlight.js"></script>
-    
+        <script src ="js/Today.js"></script>
+        <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 
+
 @media (min-width: 600px) {
 	
 	h1 {
@@ -19,7 +20,7 @@
         padding: 20px;
 	}
 
-	#chamber {
+	#chambermeet {
 		height: 40px;
 	  }
 	  
@@ -77,11 +78,10 @@
         justify-self: center;
 	}
 	
-	.navuoo-footer {
+	.name-footer {
 		grid-column: 2/3;
 		grid-row: 1/2;
         color: #fff;
-        text-align: left;
 	}
 	.contact {
 		grid-column: 3/4;
@@ -89,14 +89,26 @@
         justify-self: center;
 	}
 
-    .foot-contect {
+    .foot-hr {
         grid-column: 1/4;
 		grid-row: 2/3;
 		display: block;
         justify-self: center;  
     }
 
-	
+	.otherinfo {
+		grid-column: 1/4;
+		grid-row: 3/4;
+		display: block;
+        padding: 5px;
+        justify-self: center;
+	}
+
+  	.otherinfo p {
+		display: block;
+		flex-direction: row;
+		width: 100%;
+	}
 
 	.date-footer {
 		text-align: center;
@@ -106,16 +118,16 @@
 		margin: 10px;
 	}
 
-	
+	.hide-small {
+		display: inline-block;
+	}
 
-   
+    .name-footer h2 {
+        text-align: left;
     }
 
-    
-    
-
-
-
+    .name-footer p {
+        text-align: left;
+    }
 
 }
-
