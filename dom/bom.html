@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -11,23 +12,20 @@
 </head>
 <body>
   <h1 >📘 Book of Mormon - Top 25</h1>
-  <main>
-      <div class="input">
-          <label>Enter a book and a chapter
-              <input type="text" id="favchap" placeholder="Nephi 1" required></label>
-          <button aria-label="Add a new chapter to the list" type="submit">Add New Chapter</button>
-      </div>
-      <div class="listcontainer">
-          <ul class="list">
-          </ul>
-      </div>
-  </main> 
-  <footer>
+
+
+    <main>
+	    <label for="favchap">Add Chapter: </label>
+	    <input type="text" id="favchap" placeholder="Nephi 5" value="Nephi 5">
+	    <button type="submit">Add Chapter</button>
+	    <ul id="list"></ul>
+    </main>
+     <footer>
       <p>
           &copy; <span id="year"></span> .:|:. Ulises Martir.:|:. St Louis MO
       </p>
       <p>Last Updated: <span id="modify"></span>.</p>
   </footer>
-    <script src='js/app.js'></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

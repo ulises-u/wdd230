@@ -1,45 +1,33 @@
-// Decalres function
-function addButton(){
-	function addChapter(){
-        // Declares variables with object element. 
-		let list = document.querySelector('.list'); 
-		let input = document.querySelector('#favchap');
-		let item = document.createElement('li'); 
-		let button = document.createElement('button'); 
-		
-		// Creates a list when user input something to li
-		item.innerText = input.value; 
-		
-		// Creates an X button for deletion
-		button.innerText = '❌'; 
-		
-		// Deletes an element from the parent list
-		button.addEventListener('click', x => {button.parentElement.remove()});
-		
-		// Adds what the user input to the list
-		item.appendChild(button); 
-		
-		// Adds what the user input to the list with an X button
-		list.appendChild(item); 
-		
-		// Makes sure the input is empty 
-		input.value = ''; 
-	
-		// Sets the element as the active element in the current document
-		input.focus(); 
-	}
-	
-	// Retuns the element within the document for button and links with a click
-	document.querySelector('button').addEventListener('click',addChapter)
-}
+const input = document.querySelector("input");
+const button = document.querySelector("button");
+const list = document.querySelector("ul");
 
-// Initiates the function addButton();
-function init(){
-    addButton();
-}
+/*using the enter keyboard to submit.... button
+document.addEventListener('keypress', function (e) {
+ 	if (e.keyCode === 13 || e.which === 13) {
+ 		e.preventDefault();
+ 		return false;
+    }*/
 
-// Registers the argument of the content
-window.addEventListener('DOMContentLoaded', init);
+button.addEventListener("click", () => {
+  /*const myItem = input.value;
+    input.value = '';*/
+  if (input.value !== "") {
+    let chapters = input.value;
+
+    const li = document.createElement("li");
+    const deleteBtn = document.createElement("button");
+    li.textContent = chapters;
+    deleteBtn.textContent = "Delete ❌";
+    deleteBtn.addEventListener("click", () => {
+      list.removeChild(li);
+    });
+    li.appendChild(deleteBtn);
+    list.appendChild(li);
+  }
+  input.value = "";
+  input.focus();
+});
 //Last modified
 document.getElementById("modify").innerHTML = document.lastModified
 document.getElementById("year").innerHTML = new Date().getFullYear()
