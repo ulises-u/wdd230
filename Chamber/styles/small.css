@@ -165,11 +165,14 @@ nav ul.open {
 
 
 
-.logo1 {
+.logo {
    
     justify-content: center;
      width: 100px;
-     height: 65px;
+     height: 100px;
+     margin: 0 auto;
+    padding: 1rem;
+    margin-left: 1rem;
 
 }
      
@@ -258,16 +261,15 @@ p{
     margin-top: 10%;
 }
 .weather{
-   
-    background-color: rgb(223, 199, 63);
-}
-#weather image{
+    background-color: #ccc;
+} 
+.weather img{
     display: flex;
     justify-content: center;
-     width: 10.5rem;
+     width: 5 rem;
     margin: 0 auto;
     padding: 1rem;
-    margin-left: 1rem;
+   
    position: relative;
   
 }
@@ -278,9 +280,7 @@ p{
     margin: -1.79rem;
 }
 
-#weathericon {
-    width:8rem;
-}
+
 
 .join{
     
@@ -326,11 +326,16 @@ p{
     padding: 5px;
 }
 .spot1 img {
-    width: 100px;
-    height: 100px;
-    margin-left: 7rem;
-    margin-top: 1rem;
-    box-shadow: #000 0px 0px 10px;
+    
+    display: flex;
+    justify-content: center;
+     width: 10 rem;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-left: 1rem;
+   position: relative;
+
+
 }
 .spot2{
     
@@ -341,11 +346,14 @@ p{
     padding: 5px;
 }
 .spot2 img {
-    width: 100px;
-    height: 100px;
-    margin-left: 7rem;
-    margin-top: 1rem;
-    box-shadow: #000 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+     width: 10 rem;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-left: 1rem;
+   position: relative;
+
 }
 .spot3{
    
@@ -354,11 +362,14 @@ p{
 }
 
 .spot3 img {
-    width: 100px;
-    height: 100px;
-    margin-left: 7rem;
-    margin-top: 1rem;
-    box-shadow: #000 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+     width: 10 rem;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-left: 1rem;
+   position: relative;
+
 }
 h1{
     font-size: 25px;
