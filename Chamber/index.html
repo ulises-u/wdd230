@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NAUVOO IL.- Chamber of Commerce</title>
+    <title> Chamber-resposiive images</title>
 	
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
@@ -69,24 +69,24 @@
 
             </p>
         </div>
-        <div class="weather">
-           <div class="code-cont">
-            
-                <h2>Weather</h2>
-                <p><span id="icon-src"></span>"</p><figure><img src="images/weather.jpg" alt="id" id="weather-icon" />  <figcaption></figcaption></figure>
-                   <p class="wind-speed" id="wind-speed"></p><br>
-                   <p id="humidity"></p><br>
-                   <p id="description"></p><br>
-                   <p id="chill"></p><br>
-                   <p id="temp"></p><br>
-                   
-               </div>
+        
+            <div class="weather"> 
+                <h2>Navuoo, IL weather</h2>
+                <picture>
+                    
+                <img src="images/weather.jpg" class="weather-img"  alt="img">
+                </picture>
+                <br>
+                <h4><span id="tempurature">70</span>°F</h4>
+                 <h4>Wind Speed: <span id="speed">10</span> mph</h4>
+                <h4>Wind Chill: <span id="windchill"> NA</span></h4>
+                <br>
+            </div>
 
 
 
                
-           </div>
-        </div>
+         
         <div class="join">
             <h2>Join Us!</h2>
             <p> JUL 11, 2023 8:30 PM - AUGUST 5, 2023 10:00 PM
@@ -98,8 +98,8 @@
             <picture class="test">
                 <source media="(max-width: 600px)" srcset="images/historic-small.jpg ">  
                 <source media="(max-width: 960px)" srcset="images/historic-medium.jpg ">
-                <source media="(max-width: 1100px)" srcset="images/wwd230.org-large.jpg">
-                <img src="images/wdd230-org-large.jpg" alt="Week 06">
+                <source media="(max-width: 1100px)" srcset="images/historic-large.jpg">
+                <img src= "images/historic-large.jpg" alt= "Week 06">
             </picture>
              
                <h1 class="hero-banner">Welcome to Nauvoo</h1>
@@ -169,7 +169,7 @@
 			
 		</footer>
         
-        <script src="js/weatherapi.js"></script>
+        <script src="js/windchill.js"></script>
         <script src="js/spotlight.js"></script>
         <script src ="js/Today.js"></script>
         <script src="js/app.js"></script>
