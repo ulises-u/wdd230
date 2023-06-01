@@ -74,18 +74,21 @@
  
     }
       
-    
+    header {
+       
+        background-color: #999;
+        
+        grid-area: grid;
+        justify-content:center; 
+        padding: 70px;
+         }
     
 
     
-    header {
-        background-color: #999;
-        grid-template-columns: 5fr 1fr 1fr  ;
-        grid-area: grid;
-        justify-content:center; 
-        
-        }
+    
    
+
+    
 /*-----------------------------------------------Chamber----------------------------------------------------------------*/
 #chamber{
     background-color: #4062a7;
@@ -95,6 +98,8 @@
     margin: 0 auto;
     padding : 5px;
     color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    
    }
     aside {
          padding: 20px;
@@ -160,28 +165,29 @@ nav ul.open {
 /*-----------------------------------------------Logo-----------------------------------------------------------------*/
 
 
+.logo  {
+    width: 200px;
+    display:flexbox;
+    margin-top: 10px;
+   margin-block-start: 1cm;
+    
 
-.logo {
+
    
-     justify-content: center;
-     width: 100px;
-     height: 100px;
-     margin: 0 auto;
-     padding: 1rem;
-     margin-left: 1rem;
+   
+   }
+   
 
-}
      
-   
-
+  
        
 
 
 .footer-logo{
    
     justify-content: center;
-     width: 100px;
-     height: 65px;
+    width: 100px;
+    height: 65px;
    
    
 
@@ -191,34 +197,34 @@ nav ul.open {
 
 .hero-h1
  {
-	font-size: 2.25rem;
-  color: white;
+font-size: 3.25rem;
+ color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 10px;
 }
 
 
   
 /*-----------------------------------------------social media-----------------------------------------------------------------*/
 
-
-
-  
 .socialmedia {
     display: flex;
     justify-content: right;
     padding: 10px;  
-    margin-right: 1rem;
+   
   }
+
   
-   .icon {
+
+  
+   
+  .icon {
     
     width: 45px;
-    height: 45px;
     box-shadow: 2px 6px 12px;
-    margin-top: 10px;
-    margin-right:  1rem;
-
+    position: relative;
+    
   }
-
 
 
 /*-----------------------------------------------Hamburguer Menu-----------------------------------------------------------------*/
@@ -263,16 +269,17 @@ p{
 
   
   
-    .weather img{
+    .weather img {
         
-        display: flex;
-        justify-content: center;
-         width: 10rem;
-        margin: 0 auto;
-        padding: 1rem;
-        margin-left: 1rem;
-       position: relative;
-    
+        
+       display: flex;
+       justify-content: center;
+        width:  8rem;
+       margin: 0 auto;
+       padding: 1rem;
+      
+      position: relative;
+   
       
   }
 
@@ -461,6 +468,7 @@ footer{
   .call-to-action {
     color:white;
     background-color: #4062a7;
+   
   }
 
    
