@@ -3,11 +3,11 @@
 document.querySelector('#now').innerHTML = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format();
 //document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
 
-let banner = document.querySelector('#banner');
+let chamber = document.querySelector('#chamber');
 let dayOfWeek = new Date().getDay();
 // if Monday or Tuesday displays this
 if (dayOfWeek == 1 || dayOfWeek == 2) {
-    banner.style.display = "block";
+    chamber.style.display = "block";
 }
 //Let's get the hamburguer working!
 

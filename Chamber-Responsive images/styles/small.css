@@ -74,21 +74,18 @@
  
     }
       
-    
-    
-
-    
     header {
+       
         background-color: #999;
-        
-        grid-template-columns: 5fr 1fr 1fr ;
-       
-       
-        grid-area: header;
-        justify-content:center;
+        grid-area: grid;
+        grid-template-columns: 5fr 1fr 1fr;
+        align-items: center;
+        justify-content:center; 
+        padding: 20px 20px 0px 20px;
+         }
+    
 
-    }
-   
+    
 /*-----------------------------------------------Chamber----------------------------------------------------------------*/
 #chamber{
     background-color: #4062a7;
@@ -98,6 +95,8 @@
     margin: 0 auto;
     padding : 5px;
     color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    
    }
     aside {
          padding: 20px;
@@ -105,7 +104,15 @@
         text-align: center;
         font-size: 14px;
         padding: 20px;
+
     }
+h1 {
+  font-size: 1.0rem;
+  margin: 0;
+}
+Nauvoo1{
+    padding: 10px 10px;
+}
 
 
 /*-----------------------------------------------Nav------------------------------------------------------------------*/
@@ -114,10 +121,11 @@
 
 nav {
     background-color: #4062a7;
-    text-align: center;
-    padding: 0.5rem;
-    grid-column: 1/4;
     
+
+
+
+
 }
 nav button {
     margin: 0 auto;
@@ -163,28 +171,18 @@ nav ul.open {
 /*-----------------------------------------------Logo-----------------------------------------------------------------*/
 
 
-
-.logo {
-   
-     justify-content: center;
-     width: 100px;
-     height: 100px;
-     margin: 0 auto;
-     padding: 1rem;
-     margin-left: 1rem;
-
+.logo  {
+    justify-content: center;
+   width: 100px;
+   height: 65px;
 }
-     
    
 
-       
-
-
-.footer-logo{
+ .footer-logo{
    
     justify-content: center;
-     width: 100px;
-     height: 65px;
+    width: 100px;
+    height: 65px;
    
    
 
@@ -192,11 +190,7 @@ nav ul.open {
 }
 
 
-.hero-h1
- {
-	font-size: 2.25rem;
-  color: white;
-}
+
 
 
   
@@ -204,23 +198,31 @@ nav ul.open {
 
 
 
-  
-.socialmedia {
+  .socialmedia {
     display: flex;
     justify-content: right;
     padding: 10px;  
-    margin-right: 1rem;
+    margin: 0;
   }
-  
-   .icon {
+
+  .icon {
     
     width: 45px;
-    height: 45px;
     box-shadow: 2px 6px 12px;
-    margin-top: 10px;
-    margin-right:  1rem;
-
+    justify-content: center;
   }
+ 
+  #now {
+    background-color: #4062a7;
+    text-align: center;
+    max-width: 1200;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding : 5px;
+    color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
 
 
 
@@ -263,22 +265,25 @@ p{
 .weather{
     background-color: #ccc;
 } 
-.weather img{
-    display: flex;
-    justify-content: center;
-     width:  10 rem;
-    margin: 0 auto;
-    padding: 9rem;
-   
-   position: relative;
+
   
-}
-.weather p{
-    display: flex;
-    justify-content: center;
-    color:rgb(46, 27, 27);
-    margin: -1.79rem;
-}
+  
+    .weather img {
+        
+        
+       display: flex;
+       justify-content: center;
+        width:  8rem;
+       margin: 0 auto;
+       padding: 1rem;
+      
+      position: relative;
+   
+      
+  }
+
+
+
 
 
 
@@ -297,6 +302,9 @@ p{
     padding: 5px;  
     
 
+}
+.hero img{
+    height: 100%;
 }
 
 
@@ -434,9 +442,7 @@ footer{
   }
 /*--------------------------------------------------image large-----------------------------------------------------------*/
 
-
-
-
+ 
 
   main picture.test img {
     width: 100%;
@@ -461,6 +467,7 @@ footer{
   .call-to-action {
     color:white;
     background-color: #4062a7;
+   
   }
 
    

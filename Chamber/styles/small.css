@@ -198,14 +198,14 @@ nav ul.open {
 
 
 
-  #socialmedia {
+  .socialmedia {
     display: flex;
     justify-content: right;
     padding: 10px;  
     margin: 0;
   }
 
-  #icon {
+  .icon {
     
     width: 45px;
     box-shadow: 2px 6px 12px;
