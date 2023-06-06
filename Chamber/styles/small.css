@@ -485,5 +485,19 @@ footer{
   width: 300px;
   height: auto;
 }
-
-
+.daysOfVisit
+{
+    grid-column: 1/2;
+    max-width: 1200px;
+   
+    margin: 0 auto;
+    
+    background-color: #4062a7;
+   
+    color:#000;
+  }
+  .daysOfVisit{
+ 
+    font-weight: bold;
+    font-size: 16px;
+  }
