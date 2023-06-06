@@ -8,7 +8,7 @@ if (temp <= 50 && speed > 3) {
 windchill= f.toFixed(1);
 }
 else {
-    windchill = "NA";
+    windchill = "N/A";
 }
 document.getElementById("windchill").innerHTML = windchill;
 

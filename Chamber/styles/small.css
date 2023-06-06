@@ -440,7 +440,8 @@ footer{
     padding: 10px 0px;
     text-align: center;
   }
-/*--------------------------------------------------image large-----------------------------------------------------------*/
+   
+  --------------------------------------------------------*/
 
  
 
@@ -470,6 +471,19 @@ footer{
    
   }
 
-   
-       
+   */-----------------------------------Discover------------------*/
+
+       .discover {
+  display: grid;
+}
+
+.discover-picture {
+  display: none;
+}
+
+.discover picture img {
+  width: 300px;
+  height: auto;
+}
+
 
