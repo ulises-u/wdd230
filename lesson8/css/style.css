@@ -1,0 +1,79 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif; }
+
+:root {
+  --shadow: hsl(0,0%,50%); }
+
+  /* Apply a modern and clean overall style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(183, 19%, 81%);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Style the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color:  hsl(183, 19%, 81%);
+   
+  }
+  
+  /* Style the table caption */
+  .caption {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style the table header */
+  thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style alternating rows with different background colors */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the table cells */
+  td {
+    padding: 10px;
+  }
+  
+  /* Add hover effect to table rows */
+  tbody tr:hover {
+    background-color:rgb(42, 78, 100);
+  }
+  
+  /* Style the table footer */
+  tfoot {
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-style: italic;
+   padding-top: 10px;
+    background-color: #333;
+
+  }
+  
+  /* Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+    
+    .caption {
+      font-size: 20px;
+    }
+  }
+  
+  
