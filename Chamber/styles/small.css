@@ -55,11 +55,7 @@
       
       
 
-
-
-
-
-      /*-----------------------------header-------------------------------------------------------------------*/
+ /*-----------------------------header-------------------------------------------------------------------*/
      
        
      
@@ -83,7 +79,9 @@
         justify-content:center; 
         padding: 20px 20px 0px 20px;
          }
-    
+       
+
+
 
     
 /*-----------------------------------------------Chamber----------------------------------------------------------------*/
@@ -171,12 +169,6 @@ nav ul.open {
 /*-----------------------------------------------Logo-----------------------------------------------------------------*/
 
 
-.logo  {
-    justify-content: center;
-   width: 100px;
-   height: 65px;
-}
-   
 
  .footer-logo{
    
@@ -184,26 +176,26 @@ nav ul.open {
     width: 100px;
     height: 65px;
    
-   
-
-       
-}
+   }
 
 
+.logo {
+    width: 100px;
+    height: 100px;
+  }
+  
 
 
 
   
 /*-----------------------------------------------social media-----------------------------------------------------------------*/
 
-
-
-  .socialmedia {
-    display: flex;
-    justify-content: right;
-    padding: 10px;  
-    margin: 0;
+.socialmedia {
+    margin-right: 10px;
   }
+  
+
+  
 
   .icon {
     
@@ -262,27 +254,33 @@ p{
     text-align:left;
     margin-top: 10%;
 }
-.weather{
+
+ 
+
+
+
+/*---------------------------weather--------------------------------------------------------------------------------------------------*/
+
+ /* Weather styles */
+ .weather {
+    margin-top: 20px;
+    text-align: center;
     background-color: #ccc;
-} 
-
-  
-  
-    .weather img {
-        
-        
-       display: flex;
-       justify-content: center;
-        width:  8rem;
-       margin: 0 auto;
-       padding: 1rem;
-      
-      position: relative;
-   
-      
   }
-
-
+  
+  .cityName {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #weathericon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .weatherInfo p {
+    margin: 5px 0;
+  }
 
 
 
@@ -420,11 +418,6 @@ footer{
     
       
 
-
-
-
-
-
 }
 .nauvoo-footer   {
     color:blue;
@@ -475,7 +468,8 @@ footer{
 
        .discover {
   display: grid;
-}
+  
+} 
 
 .discover-picture {
   display: none;
@@ -489,12 +483,8 @@ footer{
 {
     grid-column: 1/2;
     max-width: 1200px;
-   
-    margin: 0 auto;
-    
-    background-color: #4062a7;
-   
-    color:#000;
+   margin: 0 auto;
+     color:white;
   }
   .daysOfVisit{
  

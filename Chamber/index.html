@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
 </head>
 <body>
     <div id="chamber">
@@ -66,19 +68,25 @@
             </p>
         </div>
         
-            <div class="weather"> 
-                <h2>Navuoo, IL weather</h2>
-                <picture>
-                    
-                <img src="images/weather.png" class="weather-img"  alt="img">
-                </picture>
-                <br>
-                <h4><span id="tempurature">70</span>°F</h4>
-                 <h4>Wind Speed: <span id="speed">10</span> mph</h4>
-                <h4>Wind Chill: <span id="windchill"> NA</span></h4>
-                <br>
-            </div>
 
+      <div class="weather">
+            <h2>Weather Information</h2>
+
+            <h3 class="cityName"></h3>
+
+            <figure><img src="images/weather.png" alt="" id="weathericon"><figcaption></figcaption></figure>
+            <section class="weatherInfo">
+                <p class="humidityDiv"></p>
+                <p class="temp"></p>
+                <p class="wind-speed"></p>
+                <p class="wind-chill"></p>
+            </section>
+         </div>
+
+        
+        
+            
+            
 
 
                
@@ -164,9 +172,8 @@
             </div>
 			
 		</footer>
-        
-        <script src="js/windchill.js"></script>
        
+        <script src="js/windchill.js"></script>
         <script src ="js/Today.js"></script>
        
 </body>
