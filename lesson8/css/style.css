@@ -24,7 +24,7 @@ body {
   
   /* Style the table caption */
   .caption {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
     padding: 10px;
     background-color: #333;
@@ -57,7 +57,7 @@ body {
   /* Style the table footer */
   tfoot {
     color: #fff;
-    padding: 10px;
+   
     text-align: left;
     font-style: italic;
    padding-top: 10px;
