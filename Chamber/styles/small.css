@@ -508,35 +508,69 @@ footer {
 
 
 
-.join-main {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
 
 
-
-.joinMissippi {
-  width: 100%;
-  margin-bottom: 20px;
-
-}
-
-.join-main h2 {
-  margin-top: 0;
-  color: blue;
-}
-
-.submitBtn {
-  padding: 10px 20px;
-  background-color: rgba(0, 85, 255, 0.494);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.submitBtn:hover {
-  background-color: rgb(85, 85, 85);
-}
-
+        .form-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 400px;
+          margin: 0 auto;
+          background-color: #f4f4f4;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-container h2 {
+          margin-bottom: 20px;
+          color: #333;
+        }
+        
+        .form-container label {
+          display: block;
+          margin-bottom: 10px;
+          color: #333;
+        }
+        
+        .form-container input,
+        .form-container textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        
+        .form-container input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .form-container input[type="submit"]:hover {
+          background-color: #0056b3;
+        }
+        
+        .form-container fieldset {
+          border: none;
+          margin-bottom: 20px;
+        }
+        
+        .form-container legend {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .form-container p.description {
+          margin-top: 5px;
+          color: #777;
+        }
+        
+        .join-main {
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+        }
+        
