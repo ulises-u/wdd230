@@ -491,6 +491,7 @@ footer {
 .discover picture img {
   width: 300px;
   height: auto;
+  transition: transform 0.3s ease;
 }
 .daysOfVisit
 {
