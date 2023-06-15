@@ -95,4 +95,22 @@
 .discover-card h2 p{
 color: blue;
 }
+
+
+/*-----------------------join page----------------------------- */
+
+.form-container {
+  width: 1200px;  
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  
+}
+
+.join-main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 }

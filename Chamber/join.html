@@ -33,6 +33,7 @@
         </div>
         
            <div id="currentYear"></div> 
+           <p class="daysOfVisit"></p>
            <div id="toggle-box">
             <span id="open-btn" class="btn-block" onclick="openMenu()"></span>
             <span id="close-btn" class="btn-hidden" onclick="closeMenu()">&times;</span> 
@@ -55,10 +56,46 @@
                 
         </nav>
 </header>
-	<main>
+	
       
-        
-	</main>
+        <main class="join-main">
+
+            
+                <div class="form-container">
+                    <p>  Welcome to Nauvoo-a city rich with history and culture. Once the home of Sauk and Fox Indians, the early 1800's saw the beginning of a steady stream of European immigrants. Some stayed a few years, some stayed for generations,
+                         but each brought to this area their dreams, culture, and beliefs. Their legacy offers a rich experience that brings visitors from all over the world.
+                    </p>
+                    <p>.</p>
+                    <img class="joinMissippi" src="images/Mississippi-river.webp" alt="river">
+                    <form action="thankyou.html" method="get">
+                        <h2>Chamber of Commerce Application</h2>
+                        <p>Please fill out this form </p>
+                        <hr>
+                
+                        <label class="top">First name <input type="text" name="fname" required></label>
+                        <label class="top">Last name <input type="text" name="lname" required></label>
+                        <label class="top">Business Name<input type="text" name="business" required></label>
+                        <label class="top">Position <input type="text" name="position" placeholder="Position in Organization" pattern="[a-zA-Z\s\-]{7,}" title="Please enter at least seven alpha characters, hyphens, or spaces."></label>
+                        <label class="top">Email <input type="email" placeholder="someone@gmail.com" name="email" required></label>
+                        <label class="top">Cell Phone Number<input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <br>
+                        <fieldset>
+                            <legend>Membership Levels:</legend>
+                        <label class="sbs"><input type="radio" class="membership" name="membershiplevel" value="Non-Profit">  Non-Profit</label>
+                        <label class="sbs"><input type="radio" class="membership" name="membershiplevel" value="Bronze">  Membership ($50)</label>
+                        <label class="sbs"><input type="radio" class="membership" name="membershiplevel" value="Silver">  Platium Membership ($200)</label>
+                        <label class="sbs"><input type="radio" class="membership" name="membershiplevel" value="Gold">  Gold Membership ($300)</label>
+                        </fieldset>
+                        <label class="top">Business Description<br><textarea name="description" rows="4"></textarea></label>
+                        <input type="hidden" id="formDateTime" name="formDateTime" value="">
+            
+                        <input type="submit" class="submitBtn" value="Join the Chamber!">
+                      </form> 
+                      
+                   
+                </div>
+              </main>
+
 
 		<footer>
         
@@ -91,8 +128,9 @@
 			
 		</footer>
        
-        <script src="js/windchill.js"></script>
+        
         <script src ="js/Today.js"></script>
+        <script src="js/visits.js"></script>
        
 </body>
 </html>
