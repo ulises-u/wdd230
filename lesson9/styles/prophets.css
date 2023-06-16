@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f4f4f458;
 }
 
 header {
@@ -28,7 +28,7 @@ main {
 }
 
 section {
-  background-color: #fff;
+  background-color:  rgb(110, 125, 134); 
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -53,6 +53,7 @@ img {
   margin-bottom: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+
 }
 
 img:hover {
@@ -61,7 +62,7 @@ img:hover {
 
 p {
   margin: 0;
-  color: #555;
+  color:whitesmoke;
   font-size: 14px;
   line-height: 1.4;
 }
