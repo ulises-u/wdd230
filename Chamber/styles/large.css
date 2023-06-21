@@ -1,118 +1,114 @@
-@media (min-width: 60em) {
-  header div button {
-    display: none;
-  }
+
+
+
+  @media (min-width: 60em) {
+    header div button {
+      display: none;
+    }
   
-    
- 
-
-    
-     
-
-  header div a {
-    margin: 1.5rem;
-  }
-
-  header .social a {
-    margin: auto;
-  }
-
-  nav ul#primaryNav {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  nav ul li a {
-    border: none;
-  }
-
-  nav ul li a {
-    padding: 0.5rem 1rem;
-  }
-
-  main {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .menu {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .hero {
-    grid-column: 2/4;
-    grid-row: 1/3;
-  }
-
-  .news {
-    grid-column: 2/4;
-    grid-row: 3/4;
-  }
-
-  .event {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .weather {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .join {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  aside {
-    grid-column: 4/5;
-    grid-row: 1/4;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #spotlight3 {
-    display: block;
-  }
+    header div a {
+      margin: 1.5rem;
+    }
   
-
- /*-----------------------Discover page----------------------------- */
+    header .social a {
+      margin: auto;
+    }
   
- .discover {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr ;
-}
-.discover-main {
-  display: block;
-}
-
-
-
-.discover-card picture img {
-  width: 300px;
-  height: 250px;
-}
-.discover-card h2 p{
-color: blue;
-}
-
-
-/*-----------------------join page----------------------------- */
-
-.form-container {
-  width: 1200px;  
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
+    nav ul#primaryNav {
+      display: flex;
+      justify-content: flex-start;
+    }
   
-}
-
-.join-main {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-}
-  /*------------------ directory chamber------------------ */
+    nav ul li a {
+      border: none;
+    }
   
+    nav ul li a {
+      padding: 0.5rem 1rem;
+    }
+  
+    main {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  
+    .menu {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  
+    .hero {
+      grid-column: 2/4;
+      grid-row: 1/3;
+    }
+  
+    .news {
+      grid-column: 2/4;
+      grid-row: 3/4;
+    }
+  
+    .event {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  
+    .weather {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+  
+    .join {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+  
+    aside {
+      grid-column: 4/5;
+      grid-row: 1/4;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #spotlight3 {
+      display: block;
+    }
+  
+    /*-----------------------Discover page----------------------------- */
+  
+    .discover {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+  
+    .discover-main {
+      display: block;
+    }
+  
+    .discover-card picture img {
+      width: 300px;
+      height: 250px;
+    }
+  
+    .discover-card h2 p {
+      color: blue;
+    }
+  
+    /*-----------------------join page----------------------------- */
+  
+    .form-container {
+      width: 1200px;
+      padding: 20px;
+      background-color: whitesmoke;
+      border-radius: 5px;
+    }
+  
+    .join-main {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    /*------------------ directory chamber------------------ */
+  
+   
+
+   

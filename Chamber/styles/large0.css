@@ -1,0 +1,95 @@
+
+
+
+
+/* Main Content */
+.directory-main {
+  padding: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+/* chamber Directory */
+.grid {
+ 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+.grid h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.grid p {
+  margin-top: 5px;
+}
+
+.grid a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: rgb(85, 85, 85);
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+  main article.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    grid-gap: 20px;
+    
+  
+}
+
+main article.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 20px;
+}
+/* large.css */
+
+
+
+/* Business Directory */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.main-grid section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+
