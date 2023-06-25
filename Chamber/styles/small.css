@@ -265,27 +265,57 @@ p{
 
 
 /*---------------------------weather--------------------------------------------------------------------------------------------------*/
+    
 
- /* Weather styles */
- .weather {
-    margin-top: 20px;
-    text-align: center;
-    background-color: #ccc;
-  }
+.weather {
+  background-color: #ccc;
+  padding: 5px;
   
-  .cityName {
-    font-size: 20px;
-    font-weight: bold;
-  }
+}
+
+.weather {
+  text-align: center;
   
-  #weathericon {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .weatherInfo p {
-    margin: 5px 0;
-  }
+}
+
+.weather h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.weather h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.weather figure {
+  margin: 20px auto;
+  max-width: 100px;
+}
+
+.weather img {
+  max-width: 100%;
+}
+
+.weatherInfo p {
+  margin: 5px 0;
+}
+
+.temp {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.wind-speed,
+.wind-chill {
+  font-size: 16px;
+}
+
+.humidityDiv {
+  font-size: 16px;
+ 
+}
 
 
 
@@ -447,7 +477,7 @@ footer {
 
 
    
-  */--------------------------------------------------------*/
+  /*--------------------------------------------------------*/
 
  
 
@@ -477,7 +507,7 @@ footer {
    
   }
 
-   */-----------------------------------Discover------------------*/
+   /*-----------------------------------Discover------------------*/
 
        .discover {
   display: grid;
@@ -505,7 +535,7 @@ footer {
     font-weight: bold;
     font-size: 16px;
   }
-*/------------------------join----------------------------*/
+/*------------------------join----------------------------*/
 
 
 
@@ -648,7 +678,7 @@ main article.grid section a {
   padding: 5px 5px;
   font-size: 14px;
   color:#111111;
-  background-color #0056b3;
+  background-color: #0056b3;
   text-decoration:wavy;
   border-radius: 8px;
 }
