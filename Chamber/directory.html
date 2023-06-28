@@ -1,26 +1,109 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Nauvoo Attractions</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+   
+
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="directory.js" defer></script>
 </head>
+
 <body>
-    <h1>Nauvoo Attractions</h1>
-    <main class="directory-main">
-        <h3>Business Directory</h3>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+    <div id="chamber">
+       
+        <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.  </p>
+      </div>
+      <div id="now"></div>
+      <header>
+        <div class="headlogo">
+            <img class="logo" src="images/logo.png" alt="Nauvoo IL Chamber of Commerce">
+            <h1 class="Nauvoo1">Nauvoo IL<br>Chamber of Commerce</h1>
         </div>
-        <hr>
+     
+        <div class="social">
+    
+            <a class="socialmedia" target="_blank" href="https://www.facebook.com"><img class="icon" src="images/facebook.png" alt="facebook"></a>
+           <a class="socialmedia" target="_blank" href="http://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="Instagram icon"></a>
+        </div>
+        
+           <div id="currentYear"></div> 
+           <div id="toggle-box">
+            <span id="open-btn" class="btn-block" onclick="openMenu()"></span>
+            <span id="close-btn" class="btn-hidden" onclick="closeMenu()">&times;</span> 
+        </div>
+    
+       
+            <nav>
+
+            <button id="hamburgerBtn"><span id="menu-btn" class="box">Menu</span>&#9776;</button>
+    
+            <ul id="Nav">
+               
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+                
+        </nav>
+</header>
+
+
+<body>
+    
+    <h1><chamber-busines>Busines Directory</chamber-busines></h1>
+    <main class="directory-main">
+        <div class="menu">
+                <button id="grid">Grid</button>
+                <button id="list">List</button>
+
+                
+        </div>
+       
         <article id="display"></article>
     </main>
+
+    <footer>
+        
+        <div id=" footer-logo">
+            <a href="index.html"><img class="footer-logo" src="images/logo.png" alt="logo"></a>
+          
+       </div>
+       <div class="nauvoo-footer">
+           <p >&copy; <span id="year"></span> Chamber of Commerce <br> Nauvoo IL.</p>
+    </div>
+    
+   
+    <div class="contact">
+        <p>Nauvooinformation@gmail.com</p>
+        <p> Call (618)-Navuvoo</p>
+        <p><a href=" https://www.bing.com/search?q=975+young+st%2c+nauvoo%2c+il+62354.+maps+google&qs=NWU&pq=975+young+st%2c+nauvoo%2c+il+62354.+map&sk=NW_XFC1NWU1&sc=6-35&cvid=DCC9C5C685A948A7A18A57BA9D0DC354&FORM=QBRE&sp=3&ghc=1&lq=0   " target="_blank">📍 Location</a></p>
+    </div>
+   
+    <hr style="height:3px;border: width 50px;;color:gray;background-color:gray">
+
+    <div class="footer-content">
+           
+            <p>.:|:. Ulises Martir.:|:. St Louis MO</p>
+        
+            <p>Last Updated: <span id="modify"></span></p>
+            <script src="js/scripts.js" defer></script>
+                    
+    </div>
+    
+</footer>
+<script src="js/windchill.js"></script>
+<script src ="js/Today.js"></script>
+
+
+
 </body>
 </html>
-
-
-
-
