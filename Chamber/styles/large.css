@@ -71,7 +71,9 @@
     #spotlight3 {
       display: block;
     }
-  
+   footer-content{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
     /*-----------------------Discover page----------------------------- */
   
     .discover {
@@ -108,7 +110,53 @@
     }
   
     /*------------------ directory chamber------------------ */
-  
-   
 
-   
+
+/* styles/large.css */
+
+/* Styles specific to large screens */
+
+/* Grid container */
+.directory-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+/* Grid items */
+.directory-main section {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.directory-main img {
+  max-width: 100%;
+  height: auto;
+}
+
+.directory-main h3 {
+  margin-top: 10px;
+}
+
+.directory-main p {
+  margin-bottom: 10px;
+}
+
+.directory-main a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+/* Other styles specific to large screens */
+/* Add your styles here */
+
+
+
+
+
+
+
+
+
+
+}

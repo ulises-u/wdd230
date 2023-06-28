@@ -89,12 +89,7 @@
         justify-self: center;
 	}
 
-    .foot-contect {
-        grid-column: 1/4;
-		grid-row: 2/3;
-		display: block;
-        justify-self: center;  
-    }
+   
 
 	
 
@@ -105,7 +100,13 @@
 	.otherinfo {
 		margin: 10px;
 	}
-
+	
+		.footer-content {
+		  text-align: left;
+		  margin: 0;
+		  max-width: none;
+		}
+	  
 	
 /*-----------------------Join page----------------------------- */
 
@@ -131,4 +132,8 @@
 
  
   
- 
+	  main-directory {
+		margin: 0 auto;
+		padding: 0.5rem;
+		max-width: 1200px;
+	  }

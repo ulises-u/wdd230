@@ -1,4 +1,6 @@
 
+
+
   :root {
     --primary-color: #283618;
     --secondary-color: #999;
@@ -171,16 +173,19 @@ nav ul.open {
 /*-----------------------------------------------Logo-----------------------------------------------------------------*/
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
+ 
+ 
 }
+
 
 
  .footer-logo{
    
     justify-content: center;
-    width: 100px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
    
    }
 
@@ -211,11 +216,12 @@ nav ul.open {
   
   .socialmedia {
     margin-left: 10px;
+    
   }
   
   .icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 
 
@@ -431,7 +437,7 @@ img{
 
 
 
-footer {
+/*footer {
   background-color: #4062a7;
   color: #fff;
   padding: 20px;
@@ -467,12 +473,77 @@ footer {
 
 .footer-content {
   text-align: center;
+  background-color:  #ccc;
+
+}
+
+footer {
+  background-color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
 }
 
 
 
 
 
+/*----------------footer ne----------*/
+.footer-logo {
+  width: 100px;
+  height: 100px;
+  background-color: #999;
+  
+}
+
+
+
+
+footer {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  }
+
+.nauvoo-footer {
+  margin-bottom: 20px;
+}
+
+.nauvoo-footer p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.footer-content {
+  color: #888;
+  font-size: 12px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  color: #888;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
 
 
 
@@ -607,13 +678,115 @@ footer {
      /*   *------------------ directory chamber------------------*/
 
      
-       
-      
+     
+    
+    
+    main-directory {
+      margin: 0 auto;
+      padding: 0.5rem;
+      max-width: 700px;
+      background-color: #fff;
+      font-family: Roboto, Helvetica, sans-serif;
+    }
+    
+    .menu {
+      margin: 1rem auto;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0.5rem;
+      background-color: #bed;
+      text-align: center;
+    }
+    
+    .menu button {
+      padding: 1rem;
+      font-weight: 700;
+    }
+    
+    section {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0.5rem;
+      background-color: #eee;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 5px;
+      align-items: center;
+    }
+    
+    .grid section {
+      text-align: center;
+    }
+    
+    .grid img {
+      border: 1px solid #fff;
+      box-shadow: 0 0 10px #333;
+    }
+    
+    .grid section > * {
+      margin: 0.1rem;
+    }
+    
+    .grid h3 {
+      font-family: "Caveat", cursive;
+    }
+    
+    .list {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .list section {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      margin: 0;
+      padding: 0.25rem;
+    }
+    
+    .list section > * {
+      margin: 0 1rem;
+    }
+    
+    .list section img {
+      display: none; /* smaller viewports only */
+    }
+    
+    .list section h3 {
+      font-size: 1rem;
+      font-family: Roboto, Helvetica, sans-serif;
+    }
+    
+    .list section:nth-child(even) {
+      background-color: #bed;
+    }
+    
+    section h3 {
+      font-size: 1.5rem;
+    }
+    
+    section p {
+      font-weight: 600;
+      font-size: smaller;
+    }
+    
+    section a {
+      font-family: "Roboto", Arial, sans-serif;
+      font-size: 0.85rem;
+      color: navy;
+      letter-spacing: 1.1pt;
+    }
+    
+    img {
+      height: 75px;
+      max-width: 100%; /* Images are jerks - Seattle*/
+    }
+    
 
  
 
 
-
+/*
 main directory {
   margin: 20px auto;
   padding: 20px;
@@ -742,4 +915,6 @@ section a {
 
 
       
-     
+    
+    
+    
