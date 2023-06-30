@@ -109,7 +109,7 @@ function createListItem(entry) {
   const listItem = document.createElement("li");
 
   const imageElement = document.createElement("img");
-  imageElement.src = image;
+  imageElement.src = image;null
   imageElement.alt = title;
   listItem.appendChild(imageElement);
 
