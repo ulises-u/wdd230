@@ -1,7 +1,5 @@
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("#display");
 
+const display = document.querySelector("#display");
 const entries = [
   {
     "image": "https://beautifulnauvoo.com/files/2021/11/NauvooVCExterior-687x489.92292f72e8f2a70b5af5bc2041f58497.jpg?&a=t",
@@ -53,13 +51,18 @@ const entries = [
   }
 ];
 
-gridbutton.addEventListener("click", showGrid);
-listbutton.addEventListener("click", showList);
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+gridButton.addEventListener("click", showGrid);
+listButton.addEventListener("click", showList);
 
 // Set the default view
 showGrid();
 
 function showGrid() {
+  const display = document.querySelector("#display");
   display.innerHTML = "";
   entries.forEach(entry => {
     const card = createCard(entry);
@@ -68,11 +71,15 @@ function showGrid() {
 }
 
 function showList() {
+  const display = document.querySelector("#display");
   display.innerHTML = "";
+  const list = document.createElement("ul");
+  list.classList.add("display-list");
   entries.forEach(entry => {
     const listItem = createListItem(entry);
-    display.appendChild(listItem);
+    list.appendChild(listItem);
   });
+  display.appendChild(list);
 }
 
 function createCard(entry) {
@@ -102,14 +109,13 @@ function createCard(entry) {
   return card;
 }
 
-
 function createListItem(entry) {
   const { image, title, phone, website } = entry;
 
   const listItem = document.createElement("li");
 
   const imageElement = document.createElement("img");
-  imageElement.src = image;null
+  imageElement.src = image;
   imageElement.alt = title;
   listItem.appendChild(imageElement);
 

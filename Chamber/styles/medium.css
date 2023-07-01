@@ -106,34 +106,9 @@
 		  margin: 0;
 		  max-width: none;
 		}
-	  
+	}
 	
 /*-----------------------Join page----------------------------- */
-
-.form-container {
-	width: 600px;  
-	padding: 20px;
-	background-color: #f2f2f2;
-	border-radius: 5px;
-	
-  }
-  
-  .join-main {
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
-  }
-   
-    }
-
-    
+/
       /*------------------ directory chamber------------------ */
 
-
- 
-  
-	  main-directory {
-		margin: 0 auto;
-		padding: 0.5rem;
-		max-width: 1200px;
-	  }

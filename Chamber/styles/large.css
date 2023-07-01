@@ -94,17 +94,16 @@
   }
 
   /*-----------------------join page----------------------------- */
-
   .form-container {
-    width: 1200px;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
   }
+  
 
   .join-main {
     margin-top: 20px;
-    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    
     justify-content: center;
   }
 
@@ -114,12 +113,11 @@
 
 
 
+ 
+    
+/* 
+  
 
-
-/*---------------------*/
-.directory-main {
-  grid-template-columns: repeat(2, 1fr);
-}
 
 .card {
   display: flex;
@@ -225,7 +223,7 @@ color: #337ab7;
 
 
 /* Directory List Styles */
-
+/* 
 #display {
 display: flex;
 flex-wrap: wrap;
@@ -299,4 +297,4 @@ margin: 0;
 text-decoration: none;
 color: #337ab7;
 }
- }
+ }  */
