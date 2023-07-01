@@ -109,6 +109,19 @@
 	}
 	
 /*-----------------------Join page----------------------------- */
-/
-      /*------------------ directory chamber------------------ */
-
+.form-container {
+	width: 100%;
+	margin: 0 auto;
+}
+	  
+	
+	  .join-main {
+		margin-top: 20px;
+		grid-template-columns: repeat(1, 1fr);
+		
+		justify-content: center;
+	  }
+  
+  
+  
+      
