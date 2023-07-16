@@ -1,5 +1,7 @@
 
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,29 +10,26 @@
   <title>Bountiful Foods</title>
 
   <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css" media="(min-width: 768px) and (max-width: 1023px)">
   <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
-
+  
   <script src="script.js" defer></script>
   <script src="weather.js" defer></script>
-  <script src="drinkTotal.js" defer></script>
-  <script src="js/Today.js"></script>
 </head>
 <body>
- 
   <header>
+    
     <div id="now"></div>
     <div class="headlogo">
       <img src="images/Green Peach Logo.png" alt="Bountiful Foods Logo">
       <h1 class="banner">Organic Foods</h1>
     </div>
-
+   
     <div class="social">
-      <a href="#"><img src="images/facebook copy.png" alt="Facebook Logo"></a>
-      <a href="#"><img src="images/instagram copy.png" alt="Instagram Logo"></a>
-      <a href="#"><img src="images/Pinterest.jpg" alt="pinterest Logo"></a>
+      <img src="images/facebook copy.png" alt="Facebook Logo">
+      <img src="images/instagram copy.png" alt="Instagram Logo">
+      <img src="images/Pinterest.jpg" alt="pinterest Logo"></a>
     </div>
 
     <div id="currentYear"></div>
@@ -39,6 +38,8 @@
       <p class="daysOfVisit"></p>
     </div>
   </header>
+
+  
 
   <nav>
     <button id="hamburgerBtn"><span id="menu-btn" class="box">Menu</span>&#9776;</button>
@@ -120,7 +121,7 @@
       <p>Last Updated: <span id="modify"></span></p>
     </div>
   </footer>
-
+  <script src ="js/Today.js"></script>
   <script src="js/home.js"></script>
   <script src="js/drinkTotal.js"></script>
 </body>
