@@ -1,0 +1,118 @@
+
+
+
+   
+    
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fresh</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 768px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+
+  <script src="script.js" defer></script>
+  <script src="weather.js" defer></script>
+  <script src="fresh.js" defer></script>
+  <script src="js/Today.js"></script>
+</head>
+<body>
+ 
+  <header>
+    <div id="now"></div>
+    <div class="headlogo">
+      <img src="images/Green Peach Logo.png" alt="Bountiful Foods Logo">
+      <h1 class="banner">Organic Foods</h1>
+    </div>
+
+    <div class="social">
+      <a href="#"><img src="images/facebook copy.png" alt="Facebook Logo"></a>
+      <a href="#"><img src="images/instagram copy.png" alt="Instagram Logo"></a>
+      <a href="#"><img src="images/Pinterest.jpg" alt="pinterest Logo"></a>
+    </div>
+
+    <div id="currentYear"></div>
+    <div id="toggle-box">
+      <span id="open-btn" class="btn-block" onclick="openMenu()"></span>
+      <p class="daysOfVisit"></p>
+    </div>
+  </header>
+
+  <nav>
+    <button id="hamburgerBtn"><span id="menu-btn" class="box">Menu</span>&#9776;</button>
+
+    <ul id="Nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fresh.html">Build Your Own</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <img src="images/basos.avif" alt="images">
+      <h2>Welcome to Bountiful Foods</h2>
+      <p>Discover fresh and healthy food options made with organic, locally sourced ingredients. Enjoy our specialty fruit drinks and explore our selection of produce.</p>
+      <a href="fresh.html" class="cta">Make Your Own Fruit Drink</a>
+    </section>
+
+  </header>
+
+  <section id="fresh">
+    <h2>Build Your Own Specialty Drink</h2>
+    <form id="drinkForm">
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div>
+        <label for="fruit1">Fruit 1:</label>
+        <select id="fruit1" name="fruit1" required>
+          <!-- Fruit options will be dynamically populated using JavaScript -->
+        </select>
+      </div>
+      <div>
+        <label for="fruit2">Fruit 2:</label>
+        <select id="fruit2" name="fruit2" required>
+          <!-- Fruit options will be dynamically populated using JavaScript -->
+        </select>
+      </div>
+      <div>
+        <label for="fruit3">Fruit 3:</label>
+        <select id="fruit3" name="fruit3" required>
+          <!-- Fruit options will be dynamically populated using JavaScript -->
+        </select>
+      </div>
+      <div>
+        <label for="specialInstructions">Special Instructions:</label>
+        <textarea id="specialInstructions" name="specialInstructions"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2023 Bountiful Foods. All rights reserved.</p>
+   
+    <div class="footer-content">
+      <p>.:|:. Ulises Martir.:|:. St Louis MO</p>
+      <p>Last Updated: <span id="modify"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+/* Import Montserrat and Lato fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* base.css */
+
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headlogo {
+  display: flex;
+  align-items: center;
+}
+
+.headlogo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.banner {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.social a {
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.box {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.box h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+ */
+
+/* Global styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.headlogo {
+  display: flex;
+  align-items: center;
+}
+
+.headlogo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.banner {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.social a {
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+section#home {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section#home h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section#home p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+section#home .cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section.menu {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.menu .heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section.menu .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.menu .box {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+section.menu .box picture {
+  width: 100%;
+}
+
+section.menu .box h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section.menu .box a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.specialtyDrinks {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.specialtyDrinks h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.specialtyDrinks .drinkCount {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#weather-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#weather-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#weather-container #weather-icon {
+  margin-bottom: 10px;
+}
+
+#weather-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display:inline-block;
+
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+}
+
+#weather-container h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#weather-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+
+
+
+}
+
+#weather-container ul li {
+  display: inline-block;
+  margin-right: 10px;
+
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-content {
+  margin-top: 10px;
+}
+
+.footer-content p {
+  margin-bottom: 5px;
+}
+
+.footer-content p:last-child {
+  margin-bottom: 0;
+}
+
+.footer-content span {
+  font-weight: 700;
+}
+
+/*weather*/
+.specialtyDrinks {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.specialtyDrinks h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.specialtyDrinks .drinkCount {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#weather-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#weather-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#weather-container #weather-icon {
+  margin-bottom: 10px;
+}
+
+#weather-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#weather-container h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#weather-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#weather-container ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
