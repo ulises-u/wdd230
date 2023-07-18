@@ -1,7 +1,7 @@
-/* Import Montserrat and Lato fonts from Google Fonts */
+/*Import Montserrat and Lato fonts from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato&display=swap');
 
-/* Global styles */
+
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
@@ -10,263 +10,171 @@ body {
 
 /* base.css */
 
- body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+
+body {
+  line-height: 1.6;
+  background-color: #f5f5f5;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
 header {
-  background-color: #f8f8f8;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.headlogo {
-  display: flex;
-  align-items: center;
+  padding: 10px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .headlogo img {
-  height: 50px;
-  margin-right: 10px;
+  height: 60px;
 }
 
 .banner {
   font-size: 24px;
-  font-weight: bold;
 }
 
-.social a {
-  margin-left: 10px;
-}
-
-nav {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
+.social img {
+  width: 30px;
   margin-right: 10px;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
+#currentYear {
+  font-size: 14px;
+  color: #999;
 }
 
+#toggle-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#Nav {
+  margin-top: 10px;
+}
+
+#Nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#Nav li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+#Nav li a:hover {
+  background-color: #34495e;
+}
+
+/* Main content styles */
 main {
   padding: 20px;
 }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+#home img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
-p {
-  margin-bottom: 10px;
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #27ae60;
+}
+
+/* Menu section styles */
+.menu {
+  margin-top: 40px;
+}
+
+.menu h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .box-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .box {
-  background-color: #f8f8f8;
-  padding: 20px;
-  text-align: center;
+  width: 48%;
+  margin-bottom: 20px;
 }
 
-.box img {
+.box picture img {
   width: 100%;
   max-height: 200px;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .box h3 {
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.btn {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  margin-top: 10px;
-}
- */
-
-/* Global styles */
-body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-.headlogo {
-  display: flex;
-  align-items: center;
-}
-
-.headlogo img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.banner {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.social a {
-  margin-left: 10px;
-}
-
-nav {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
-  border: 1px solid #333;
-  border-radius: 5px;
-}
-
-nav ul li a:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-main {
-  padding: 20px;
-}
-
-section#home {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-section#home h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-section#home p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-section#home .cta {
+.box a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #3498db;
   color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
 }
 
-section.menu {
-  text-align: center;
-  margin-bottom: 40px;
+.box a:hover {
+  background-color: #2980b9;
 }
 
-section.menu .heading {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-section.menu .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-section.menu .box {
-  width: 250px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-section.menu .box picture {
-  width: 100%;
-}
-
-section.menu .box h3 {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-section.menu .box a.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
+/* Specialty Drinks styles */
 .specialtyDrinks {
-  text-align: center;
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .specialtyDrinks h2 {
   font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.specialtyDrinks .drinkCount {
+.drinkCount {
   font-size: 18px;
-  font-weight: 700;
+  color: #777;
 }
 
+
+
+/* Weather section styles */
 #weather-container {
   text-align: center;
   margin-bottom: 40px;
@@ -276,24 +184,27 @@ section.menu .box a.btn {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #fff;
+  background-color: #2980b9;
+
 }
 
 #weather-container #weather-icon {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 #weather-container p {
   font-size: 18px;
   margin-bottom: 10px;
-  display:inline-block;
-
+  display: inline-block;
   width: 250px;
   margin: 20px;
   padding: 20px;
-  background-color: #f9f9f9;
+  color: #fff;
+ 
+  background-color: #2980b9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-
 }
 
 #weather-container h3 {
@@ -306,30 +217,25 @@ section.menu .box a.btn {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-
-
-
 }
 
 #weather-container ul li {
   display: inline-block;
   margin-right: 10px;
-
   width: 250px;
   margin: 20px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #27ae60;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  color: #fff;
 }
-
+/* Footer styles */
 footer {
-  background-color: #f9f9f9;
-  padding: 20px;
+  background-color: #2c3e50;
+  padding: 20px 0;
   text-align: center;
-  font-size: 14px;
-  color: #777;
+  color: #fff;
 }
 
 .footer-content {
@@ -340,64 +246,146 @@ footer {
   margin-bottom: 5px;
 }
 
-.footer-content p:last-child {
-  margin-bottom: 0;
-}
-
 .footer-content span {
-  font-weight: 700;
+  font-weight: bold;
 }
 
-/*weather*/
-.specialtyDrinks {
-  text-align: center;
-  margin-bottom: 40px;
+/*about page */
+#about {
+  margin-top: 40px;
 }
 
-.specialtyDrinks h2 {
-  font-size: 24px;
-  font-weight: 700;
+#about img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
   margin-bottom: 20px;
 }
 
-.specialtyDrinks .drinkCount {
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color:whitesmoke;
+  background-color: #2980b9;
+}
+
+#about p {
   font-size: 18px;
-  font-weight: 700;
-}
-
-#weather-container {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-#weather-container h2 {
-  font-size: 24px;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
-#weather-container #weather-icon {
-  margin-bottom: 10px;
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #f9f9f9;
 }
 
-#weather-container p {
+.contact-info nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-info nav li {
+  margin-right: 20px;
+}
+
+.contact-info nav li a {
+ 
+  color: #fff;
+ 
+  background-color: #2980b9;
   font-size: 18px;
-  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
 }
 
-#weather-container h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
+.contact-info nav li a:hover {
+  background-color: #f5f5f5;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-#weather-container ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#weather-container ul li {
-  display: inline-block;
+.social a {
   margin-right: 10px;
+}
+/* Fresh page styles */
+#fresh h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#fruitMixForm {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#fruitMixForm div {
+  margin-bottom: 20px;
+}
+
+#fruitMixForm label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#fruitMixForm input,
+#fruitMixForm select,
+#fruitMixForm textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#fruitMixForm select {
+  width: 200px;
+}
+
+#fruit-selector {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fruit-selector div {
+  flex: 0 0 calc(33.33% - 20px);
+}
+
+#specialInstructions {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+#submitBtn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #2980b9;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
 }

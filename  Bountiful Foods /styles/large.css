@@ -6,3 +6,50 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* Styles for large views (e.g., desktops) */
+.container {
+  padding: 40px;
+}
+
+.menu .box {
+  width: 24%;
+}
+
+#weather-container {
+  margin-top: 60px;
+}
+
+#weather-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#weather-container p,
+#weather-container ul li {
+  width: 30%;
+}
+/*fresh*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  display: flex;
+}
+/* Fresh page styles */
+#fruitMixForm div {
+  flex: 0 0 calc(33.33% - 20px);
+}
+
+
+/* Fresh page styles */
+
+#specialInstructions {
+  width: 100%;
+  height: 100px;
+  resize: none;
+ 
+}

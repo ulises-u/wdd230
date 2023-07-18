@@ -6,4 +6,35 @@
   }
 }
 
+/* Styles for medium views (e.g., tablets) */
+.container {
+  padding: 30px;
+}
 
+.menu .box {
+  width: 30%;
+}
+
+#weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#weather-container p,
+#weather-container ul li {
+  width: 48%;
+}
+
+#weather-container h3 {
+  margin-top: 30px;
+}
+
+/* Fresh page  */
+#fruit-selector div {
+  flex: 0 0 calc(50% - 20px);
+}
+
+#specialInstructions {
+  height: 150px;
+}
