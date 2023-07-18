@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="styles/medium.css" media="(min-width: 768px) and (max-width: 1023px)">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
     
-    <script src="script.js" defer></script>
-    <script src="weather.js" defer></script>
+    
   </head>
   <body>
     <header>
@@ -60,7 +59,7 @@
 
   <section id="fresh">
     <h2>Build Your Own Specialty Drink</h2>
-    <form id="drinkForm">
+    <form id="fruitMixForm">
       <div>
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
@@ -73,31 +72,37 @@
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" required>
       </div>
-      <div>
-        <label for="fruit1">Fruit 1:</label>
-        <select id="fruit1" name="fruit1" required>
-          <!-- Fruit options will be dynamically populated using JavaScript -->
-        </select>
-      </div>
-      <div>
-        <label for="fruit2">Fruit 2:</label>
-        <select id="fruit2" name="fruit2" required>
-          <!-- Fruit options will be dynamically populated using JavaScript -->
-        </select>
-      </div>
-      <div>
-        <label for="fruit3">Fruit 3:</label>
-        <select id="fruit3" name="fruit3" required>
-          <!-- Fruit options will be dynamically populated using JavaScript -->
-        </select>
+      <div id="fruit-selector">
+        <div>
+          <label for="fruit1">Fruit 1:</label>
+          <select id="fruit1" name="fruit1" required>
+            <!-- Fruit options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+        <div>
+          <label for="fruit2">Fruit 2:</label>
+          <select id="fruit2" name="fruit2" required>
+            <!-- Fruit options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+        <div>
+          <label for="fruit3">Fruit 3:</label>
+          <select id="fruit3" name="fruit3" required>
+            <!-- Fruit options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
       </div>
       <div>
         <label for="specialInstructions">Special Instructions:</label>
         <textarea id="specialInstructions" name="specialInstructions"></textarea>
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" id="submitBtn">Submit</button>
+      <div id="output"></div>
     </form>
-  </section>
+   
+
+  
+   
 </main>
 
   <footer>
@@ -108,6 +113,8 @@
       <p>Last Updated: <span id="modify"></span></p>
     </div>
   </footer>
-
+  <script src ="js/Today.js"></script>
+   <script src="js/fresh.js" defer></script>
 </body>
+
 </html>
