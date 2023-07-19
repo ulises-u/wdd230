@@ -1,5 +1,5 @@
 
-  "use strict";
+"use strict";
 
 // Display Current Date
 let nowElement = document.querySelector('#now');
@@ -8,22 +8,15 @@ if (nowElement) {
 }
 
 // Conditional Display
-let chamber = document.querySelector('#BountifulFoods');
-if (chamber) {
+let BountifulFoods = document.querySelector('#BountifulFoods');
+if (BountifulFoods) {
   let dayOfWeek = new Date().getDay();
   if (dayOfWeek === 1 || dayOfWeek === 2) {
-    chamber.style.display = "block";
+    BountifulFoods.style.display = "block";
   }
 }
 
-// Toggle Menu
-function toggleMenu() {
-  let navElement = document.getElementById('Nav');
-  if (navElement) {
-    navElement.classList.toggle('open');
-  }
-}
-
+// Add onClick Event to Mobile Menu Button
 let navig = document.getElementById('hamburgerBtn');
 if (navig) {
   navig.onclick = toggleMenu;
@@ -41,4 +34,10 @@ if (yearElement) {
   yearElement.innerHTML = new Date().getFullYear();
 }
 
-
+// Toggle Menu Function
+function toggleMenu() {
+  let navElement = document.getElementById('Nav');
+  if (navElement) {
+    navElement.classList.toggle('active');
+  }
+}

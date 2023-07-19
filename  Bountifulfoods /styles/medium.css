@@ -31,10 +31,46 @@
 }
 
 /* Fresh page  */
-#fruit-selector div {
-  flex: 0 0 calc(50% - 20px);
+/* Medium View (Tablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Adjust styles for medium view here */
+
+  header h2,
+  main h2 {
+    font-size: 32px;
+  }
+
+  .box {
+    width: 45%;
+  }
+
+  .specialtyDrinks h2 {
+    font-size: 28px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
 }
 
-#specialInstructions {
-  height: 150px;
+/* Large View (Desktops and Large Screens) */
+@media screen and (min-width: 992px) {
+  /* Adjust styles for large view here */
+
+  header h2,
+  main h2 {
+    font-size: 36px;
+  }
+
+  .box {
+    width: 30%;
+  }
+
+  .specialtyDrinks h2 {
+    font-size: 30px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
 }
