@@ -1,572 +1,568 @@
-
-    /*Import Montserrat and Lato fonts from Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato&display=swap');
-
-
-body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* base.css */
+ /*Import Montserrat and Lato fonts from Google Fonts*/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato&display=swap');
 
 
- /* Navigation styles */
- nav {
-  background-color: #bdc5cc;
-  text-align: center;
-  padding: 10px 0;
-}
-
-#Nav {
-  margin-top: 10px;
-  display: none; /* Hide the navigation links by default on small screens */
-}
-
-#Nav.active {
-  display: block; /* Show the navigation links when the menu is active */
-}
-
-#Nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-#Nav li a {
-  color: #fff;
-  font-size: 18px;
-  padding: 5px 10px;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-#Nav li a:hover {
-  background-color: #34495e;
-}
-
-/* Mobile Menu Styling */
-#hamburgerBtn {
-  display: block; /* Show the mobile menu button */
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #18754a;
-}
-
-/* Style the hamburger icon */
-#menu-btn::before,
-#menu-btn::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 24px;
+ body {
+   font-family: 'Lato', sans-serif;
+   margin: 0;
+   padding: 0;
+ }
  
-}
-
-#menu-btn::before {
-  margin-bottom: 5px;
-}
-
-#menu-btn::after {
-  margin-top: 5px;
-}
-
-/* Add styles for the active state of the hamburger icon (when menu is open) */
-#hamburgerBtn.active #menu-btn::before {
-  transform: rotate(45deg) translate(5px, 6px);
-}
-
-#hamburgerBtn.active #menu-btn::after {
-  transform: rotate(-45deg) translate(5px, -6px);
-}
-
-/* Media Query for medium screens (e.g., tablets) and larger */
-@media screen and (min-width: 768px) {
-  /* Move shared navigation styles here */
-  nav button {
-    display: none;
-  }
-  nav ul#Nav {
-    display: flex;
-  }
-  nav ul li {
-    text-align: center;
-    flex: 1 0 auto;
-  }
-}
-
-
-     
-     
-     
-
-/*aqui voy*/
-
-body {
-  line-height: 1.6;
-  border: 5px solid #1E91D6;
-  background-color: #f5f5f5;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  background-color:#f5f5f5;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.headlogo img {
-  height: 60px;
+ /* base.css */
  
  
-}
-
-.banner {
-  font-size: 24px;
-}
-
-.social img {
-  width: 30px;
-  margin-right: 10px;
-}
-
-#currentYear {
-  font-size: 14px;
-  color: #999;
+  /* Navigation styles */
+  nav {
+    background-color: #bdc5cc;
+   text-align: center;
+   padding: 10px 0;
+ }
+ 
+ #Nav {
+   margin-top: 10px;
+   display: none; /* Hide the navigation links by default on small screens */
+ }
+ 
+ #Nav.active {
+   display: block; /* Show the navigation links when the menu is active */
+ }
+ 
+ #Nav li {
+   display: inline-block;
+   margin-right: 15px;
+ }
+ 
+ #Nav li a {
+   color: #fff;
+   font-size: 18px;
+   padding: 5px 10px;
+   border-radius: 3px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ #Nav li a:hover {
+   background-color: #34495e;
+ }
+ 
+ /* Mobile Menu Styling */
+ #hamburgerBtn {
+   display: block; /* Show the mobile menu button */
+   background: transparent;
+   border: none;
+   font-size: 1.5rem;
+   cursor: pointer;
+   color: #f5f5f5;
+ }
+ 
+ /* Style the hamburger icon */
+ #menu-btn::before,
+ #menu-btn::after {
+   content: "";
+   display: block;
+   height: 2px;
+   width: 24px;
   
-}
-
-#toggle-box {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-
-#Nav {
-  margin-top: 10px;
-  background-color: #34495e;
-}
-
-#Nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-#Nav li a {
-  color: #fff;
-  font-size: 18px;
-  padding: 5px 10px;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-#Nav li a:hover {
-  background-color: #34495e;
-}
-
-/* Main content styles */
-main {
-  padding: 20px;
-}
-
-#home img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.cta {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #2ecc71;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.cta:hover {
-  background-color: #27ae60;
-}
-
-/* Menu section styles */
-.menu {
-  margin-top: 40px;
-}
-
-.menu h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.box {
-  width: 48%;
-  margin-bottom: 20px;
-}
-
-.box picture img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.box h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.box a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-.box a:hover {
-  background-color: #2980b9;
-}
-
-/* Specialty Drinks styles */
-.specialtyDrinks {
-  margin-top: 40px;
-}
-
-.specialtyDrinks h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.drinkCount {
-  font-size: 18px;
-  color: #777;
-}
-
-
-
-/* Weather section styles */
-#weather-container {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-#weather-container h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #fff;
-  background-color: #2980b9;
-
-}
-
-#weather-container #weather-icon {
-  margin-bottom: 15px;
-}
-
-#weather-container p {
-  font-size: 18px;
-  margin-bottom: 10px;
-  display: inline-block;
-  width: 250px;
-  margin: 20px;
-  padding: 20px;
-  color: #fff;
+ }
  
-  background-color: #2980b9;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-#weather-container h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-#weather-container ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#weather-container ul li {
-  display: inline-block;
-  margin-right: 10px;
-  width: 250px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #27ae60;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  color: #fff;
-}
-/* Footer styles */
-footer {
-  background-color: #2c3e50;
-  padding: 20px 0;
-  text-align: center;
-  color: #fff;
-}
-
-.footer-content {
-  margin-top: 10px;
-}
-
-.footer-content p {
-  margin-bottom: 5px;
-}
-
-.footer-content span {
-  font-weight: bold;
-}
-
-/*about page */
-#about {
-  margin-top: 40px;
-}
-
-#about img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-#about h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color:whitesmoke;
-  background-color: #2980b9;
-}
-
-#about p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.contact-info {
-  text-align: center;
-  margin-top: 30px;
-  padding: 10px;
-  background-color: #f9f9f9;
-}
-
-.contact-info nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-info nav ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact-info nav li {
-  margin-right: 20px;
-}
-
-.contact-info nav li a {
+ #menu-btn::before {
+   margin-bottom: 5px;
+ }
  
-  color: #fff;
+ #menu-btn::after {
+   margin-top: 5px;
+ }
  
-  background-color: #2980b9;
-  font-size: 18px;
-  padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-.contact-info nav li a:hover {
-  background-color: #f5f5f5;
-}
-.social {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social a {
-  margin-right: 10px;
-}
-/*fresh*/
-
-/* Base styles for the main content */
-.fresh-main {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Styling for the first section */
-#home {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-#home img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#home h2 {
-  font-size: 32px;
-  margin: 20px 0;
-}
-
-#home p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.cta {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.cta:hover {
-  background-color: #2980b9;
-}
-
-/* Styling for the second section */
-#fresh {
-  text-align: center;
-}
-
-#fresh h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-#fruitMixForm div {
-  text-align: left;
-}
-
-#fruitMixForm label {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-#fruitMixForm input,
-#fruitMixForm select,
-#fruitMixForm textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  margin-bottom: 15px;
-}
-
-#fruit-selector {
-  display: flex;
-  justify-content: space-between;
-}
-
-#fruit-selector div {
-  flex: 0 0 calc(33.33% - 20px);
-}
-
-#specialInstructions {
-  height: 150px;
-  resize: vertical;
-}
-
-#submitBtn {
-  padding: 10px 20px;
-  background-color: #27ae60;
-  color: #fff;
-  font-size: 18px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#submitBtn:hover {
-  background-color: #219651;
-}
-
-#output {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #27ae60;
-}
-
-
-
-
-
-
-
-/* Fresh page styles */
-
-/* Base styles (already provided in base.css) */
-/* Large View (Desktops and Large Screens) */
-@media screen and (min-width: 992px) {
-  /* Add your styles for large view here */
-
-  header h2,
-  main h2 {
-    font-size: 36px;
-  }
-
-  .box {
-    width: 30%;
-  }
-
-  .specialtyDrinks h2 {
-    font-size: 30px;
-  }
-
-  footer p {
-    font-size: 16px;
-  }
-
-  /* Additional form styles for large view */
-  #fruitMixForm label {
-    font-size: 20px;
-  }
-
-  #fruitMixForm input,
-  #fruitMixForm select,
-  #fruitMixForm textarea {
-    font-size: 18px;
-  }
-
-  #fruit-selector div {
-    flex: 0 0 calc(25% - 20px);
-  }
-}
+ /* Add styles for the active state of the hamburger icon (when menu is open) */
+ #hamburgerBtn.active #menu-btn::before {
+   transform: rotate(45deg) translate(5px, 6px);
+ }
+ 
+ #hamburgerBtn.active #menu-btn::after {
+   transform: rotate(-45deg) translate(5px, -6px);
+ }
+ 
+ /* Media Query for medium screens (e.g., tablets) and larger */
+ @media screen and (min-width: 768px) {
+   /* Move shared navigation styles here */
+   nav button {
+     display: none;
+   }
+   nav ul#Nav {
+     display: flex;
+   }
+   nav ul li {
+     text-align: center;
+     flex: 1 0 auto;
+   }
+ }
+ 
+ 
+      
+      
+      
+ 
+ /*aqui voy*/
+ 
+ body {
+   line-height: 1.6;
+   border: 5px solid #1E91D6;
+   background-color: #f5f5f5;
+ }
+ 
+ .container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+ }
+ 
+ /* Header styles */
+ header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;
+   background-color:#f5f5f5;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .headlogo img {
+   height: 60px;
+ }
+ 
+ .banner {
+   font-size: 24px;
+ }
+ 
+ .social img {
+   width: 30px;
+   margin-right: 10px;
+ }
+ 
+ #currentYear {
+   font-size: 10px;
+   color: #999;
+ }
+ 
+ #toggle-box {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ 
+ 
+ #Nav {
+   margin-top: 10px;
+   background-color: #2980b9;
+ }
+ 
+ #Nav li {
+   display: inline-block;
+   margin-right: 20px;
+ }
+ 
+ #Nav li a {
+   color: #fff;
+   font-size: 18px;
+   padding: 5px 10px;
+   border-radius: 3px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ #Nav li a:hover {
+   background-color: #34495e;
+ }
+ 
+ /* Main content styles */
+ main {
+   padding: 20px;
+ }
+ 
+ #home img {
+   width: 100%;
+   max-height: 400px;
+   object-fit: cover;
+   margin-bottom: 20px;
+ }
+ 
+ .cta {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #2ecc71;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .cta:hover {
+   background-color: #27ae60;
+ }
+ 
+ /* Menu section styles */
+ .menu {
+   margin-top: 40px;
+ }
+ 
+ .menu h2 {
+   font-size: 28px;
+   margin-bottom: 20px;
+ }
+ 
+ .box-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ 
+ .box {
+   width: 48%;
+   margin-bottom: 20px;
+ }
+ 
+ .box picture img {
+   width: 100%;
+   max-height: 200px;
+   object-fit: cover;
+   margin-bottom: 10px;
+ }
+ 
+ .box h3 {
+   font-size: 20px;
+   margin-bottom: 10px;
+ }
+ 
+ .box a {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #3498db;
+   color: #fff;
+   font-size: 16px;
+   border-radius: 3px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .box a:hover {
+   background-color: #2980b9;
+ }
+ 
+ /* Specialty Drinks styles */
+ .specialtyDrinks {
+   margin-top: 40px;
+ }
+ 
+ .specialtyDrinks h2 {
+   font-size: 24px;
+   margin-bottom: 10px;
+ }
+ 
+ .drinkCount {
+   font-size: 18px;
+   color: #777;
+ }
+ 
+ 
+ 
+ /* Weather section styles */
+ #weather-container {
+   text-align: center;
+   margin-bottom: 40px;
+ }
+ 
+ #weather-container h2 {
+   font-size: 24px;
+   font-weight: 700;
+   margin-bottom: 20px;
+   color: #fff;
+   background-color: #2980b9;
+ 
+ }
+ 
+ #weather-container #weather-icon {
+   margin-bottom: 15px;
+ }
+ 
+ #weather-container p {
+   font-size: 18px;
+   margin-bottom: 10px;
+   display: inline-block;
+   width: 250px;
+   margin: 20px;
+   padding: 20px;
+   color: #fff;
+  
+   background-color: #2980b9;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+ }
+ 
+ #weather-container h3 {
+   font-size: 18px;
+   font-weight: 700;
+   margin-bottom: 10px;
+ }
+ 
+ #weather-container ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ #weather-container ul li {
+   display: inline-block;
+   margin-right: 10px;
+   width: 250px;
+   margin: 20px;
+   padding: 20px;
+   background-color: #27ae60;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   color: #fff;
+ }
+ /* Footer styles */
+ footer {
+   background-color: #2c3e50;
+   padding: 20px 0;
+   text-align: center;
+   color: #fff;
+ }
+ 
+ .footer-content {
+   margin-top: 10px;
+ }
+ 
+ .footer-content p {
+   margin-bottom: 5px;
+ }
+ 
+ .footer-content span {
+   font-weight: bold;
+ }
+ 
+ /*about page */
+ #about {
+   margin-top: 40px;
+ }
+ 
+ #about img {
+   width: 100%;
+   max-height: 400px;
+   object-fit: cover;
+   margin-bottom: 20px;
+ }
+ 
+ #about h2 {
+   font-size: 28px;
+   margin-bottom: 20px;
+   color:whitesmoke;
+   background-color: #2980b9;
+ }
+ 
+ #about p {
+   font-size: 18px;
+   margin-bottom: 20px;
+ }
+ 
+ .contact-info {
+   text-align: center;
+   margin-top: 30px;
+   padding: 10px;
+   background-color: #f9f9f9;
+ }
+ 
+ .contact-info nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .contact-info nav ul {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ .contact-info nav li {
+   margin-right: 20px;
+ }
+ 
+ .contact-info nav li a {
+  
+   color: #fff;
+  
+   background-color: #2980b9;
+   font-size: 18px;
+   padding: 5px 10px;
+   border: 1px solid #ddd;
+   border-radius: 3px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .contact-info nav li a:hover {
+   background-color: #f5f5f5;
+ }
+ .social {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+ }
+ 
+ .social a {
+   margin-right: 10px;
+ }
+ /*fresh*/
+ 
+ /* Base styles for the main content */
+ .fresh-main {
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ /* Styling for the first section */
+ #home {
+   text-align: center;
+   margin-bottom: 40px;
+ }
+ 
+ #home img {
+   max-width: 100%;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #home h2 {
+   font-size: 32px;
+   margin: 20px 0;
+ }
+ 
+ #home p {
+   font-size: 18px;
+   line-height: 1.6;
+ }
+ 
+ .cta {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #3498db;
+   color: #fff;
+   font-size: 20px;
+   text-decoration: none;
+   border-radius: 5px;
+   margin-top: 20px;
+ }
+ 
+ .cta:hover {
+   background-color: #2980b9;
+ }
+ 
+ /* Styling for the second section */
+ #fresh {
+   text-align: center;
+ }
+ 
+ #fresh h2 {
+   font-size: 36px;
+   margin-bottom: 30px;
+ }
+ 
+ #fruitMixForm div {
+   text-align: left;
+ }
+ 
+ #fruitMixForm label {
+   display: block;
+   font-size: 18px;
+   margin-bottom: 5px;
+ }
+ 
+ #fruitMixForm input,
+ #fruitMixForm select,
+ #fruitMixForm textarea {
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+   border-radius: 5px;
+   border: 1px solid #ddd;
+   margin-bottom: 15px;
+ }
+ 
+ #fruit-selector {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ #fruit-selector div {
+   flex: 0 0 calc(33.33% - 20px);
+ }
+ 
+ #specialInstructions {
+   height: 150px;
+   resize: vertical;
+ }
+ 
+ #submitBtn {
+   padding: 10px 20px;
+   background-color: #27ae60;
+   color: #fff;
+   font-size: 18px;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ #submitBtn:hover {
+   background-color: #219651;
+ }
+ 
+ #output {
+   margin-top: 20px;
+   font-size: 18px;
+   font-weight: bold;
+   color: #27ae60;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Fresh page styles */
+ 
+ /* Base styles (already provided in base.css) */
+ /* Large View (Desktops and Large Screens) */
+ @media screen and (min-width: 992px) {
+   /* Add your styles for large view here */
+ 
+   header h2,
+   main h2 {
+     font-size: 36px;
+   }
+ 
+   .box {
+     width: 30%;
+   }
+ 
+   .specialtyDrinks h2 {
+     font-size: 30px;
+   }
+ 
+   footer p {
+     font-size: 16px;
+   }
+ 
+   /* Additional form styles for large view */
+   #fruitMixForm label {
+     font-size: 20px;
+   }
+ 
+   #fruitMixForm input,
+   #fruitMixForm select,
+   #fruitMixForm textarea {
+     font-size: 18px;
+   }
+ 
+   #fruit-selector div {
+     flex: 0 0 calc(25% - 20px);
+   }
+ }
