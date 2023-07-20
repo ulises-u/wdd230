@@ -884,3 +884,30 @@ ul.display-list li a {
   font-weight: bold;
   margin-top: 10px;
 }
+
+/* Additional CSS for the dynamic spotlight section */
+#chamber {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.spotlight-item {
+  width: 200px;
+  padding: 50px;
+  margin: 10px;
+  
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 0.71, 0.58, 0.99) forwards;
+}
+
+/* Animation keyframes for the spotlight item entrance */
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

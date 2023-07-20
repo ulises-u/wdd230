@@ -87,4 +87,12 @@
     justify-content: center;
   }
  }
-    
+    /*--------------*/
+   /* Your existing CSS styles here */
+
+/* Additional styles for large viewports */
+
+/* Adjust the spotlight item width for large viewports */
+.spotlight-item {
+  width: 400px;
+}
